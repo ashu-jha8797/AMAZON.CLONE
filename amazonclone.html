@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Amazon Clone</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #e3e6e6;
+    }
+
+    /* Header */
+    .header {
+      background-color: #131921;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 12px 24px;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #f08804;
+      cursor: pointer;
+    }
+
+    .search-bar {
+      flex: 1;
+      margin: 0 20px;
+      display: flex;
+    }
+
+    .search-bar input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      font-size: 16px;
+      border-radius: 4px 0 0 4px;
+    }
+
+    .search-bar button {
+      padding: 10px 20px;
+      background-color: #febd69;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .search-bar button:hover {
+      background-color: #f3a847;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links div {
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url('https://m.media-amazon.com/images/I/71Ie3JXGfVL._SX3000_.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      position: relative;
+      margin-bottom: -100px;
+    }
+
+    /* Products Grid */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 120px 30px 30px;
+    }
+
+    .product {
+      background-color: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .product:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .product img {
+      max-width: 100%;
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: #0f1111;
+    }
+
+    .product p {
+      color: #b12704;
+      font-weight: bold;
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #131921;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">Amazon</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search Amazon">
+      <button>Search</button>
+    </div>
+    <div class="nav-links">
+      <div>Account</div>
+      <div>Orders</div>
+      <div>Cart</div>
+    </div>
+  </div>
+
+  <!-- Hero Banner -->
+  <div class="hero"></div>
+
+  <!-- Products Section -->
+  <div class="products">
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/31+Ii+TObKL._AC_SY200_.jpg" alt="Headphones">
+      <h3>Wireless Headphones</h3>
+      <p>₹1,299.00</p>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61drpi3cYUL._AC_SY200_.jpg" alt="Speaker">
+      <h3>Bluetooth Speaker</h3>
+      <p>₹999.00</p>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/51W8b0G8QGL._AC_SY200_.jpg" alt="Smartwatch">
+      <h3>Smart Watch</h3>
+      <p>₹2,499.00</p>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61bK6PMOC3L._AC_SY200_.jpg" alt="Mobile">
+      <h3>Mobile Phone</h3>
+      <p>₹15,999.00</p>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/81hH5vGkTUL._AC_SY200_.jpg" alt="Laptop">
+      <h3>Gaming Laptop</h3>
+      <p>₹55,999.00</p>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/31J+Y0tH-KL._AC_SY200_.jpg" alt="Camera">
+      <h3>DSLR Camera</h3>
+      <p>₹34,500.00</p>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61uB9UeedCL._AC_SY200_.jpg" alt="Shoes">
+      <h3>Running Shoes</h3>
+      <p>₹1,499.00</p>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61mH9b+1c0L._AC_SY200_.jpg" alt="Backpack">
+      <h3>Travel Backpack</h3>
+      <p>₹849.00</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2025 Amazon Clone by Full Stack Nomad. For educational and portfolio use only.
+  </div>
+
+</body>
+</html>
